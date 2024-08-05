@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Reproductor de Música</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <div class="reproductor-musica">
-            <h1>Título</h1>
-            <p>Nombre de la Canción</p>
-            <audio id="cancion">
-                <source src="" type="audio/mpeg" />
-            </audio>
-            <input type="range" value="0" id="progreso" />
-            <div class="controles">
-                <button class="atras">
-                    <i class="bi bi-rewind-fill"></i>
-                </button>
-                <button class="boton-reproducir-pausar">
-                    <i class="bi bi-play-fill" id="iconoControl"></i>
-                </button>
-                <button class="adelante">
-                    <i class="bi bi-fast-forward-fill"></i>
-                </button>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Música</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" href="img/play-circle-fill.svg" type="image/x-icon" />
+</head>
+<body>
+
+    <section class="reproductor-musica">
+        <h1>Título</h1>
+        <p>Nombre</p>
+        <audio id="cancion">
+            <source src="" type="audio/mpeg"/>
+        </audio>
+        <input type="range" value="0" id="progreso"/>
+        <div class="controles">
+            <button class="atras control">
+                <i class="bi bi-rewind-fill"></i>
+            </button>
+            <button class="boton-reproducir-pausar iconoControl">
+                <i class="bi bi-play-fill" id="iconoControl"></i>
+            </button>
+            <button class="adelante control">
+                <i class="bi bi-fast-forward-fill"></i>
+            </button>
         </div>
-        <script src="app.js"></script>
-    </body>
+    </section>
+    
+    <script src="app.js"></script>
+</body>
 </html>
